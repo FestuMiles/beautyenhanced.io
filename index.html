@@ -10,11 +10,15 @@
     <header>
         <h2 class="beauty_name">Beauty Enhanced <span>.</span></h2>
         <nav class="navigator">
-            <ul>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact Us</a>
-            </ul>
+            <div class="nav" id="nav">
+            <img src="icon/close (1).png" alt="" height="20px" class="icons" onclick="hideMenu()">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <img src="icon/menu-button-of-three-horizontal-lines.png" alt="" height="20px" class="icons" onclick="showMenu()">
         </nav>
     </header>
 
@@ -137,5 +141,21 @@
         <div class="credit">created by <span>Mr. Miles</span> | all rights reserved</div>
     </section>
     
+
+
+
+
+    <!-- ---------- JavaScript for Toggle Menu ------------ -->
+<script>
+    var nav = document.getElementById("nav");
+
+    function showMenu() {
+        nav.style.right = "0";
+    }
+    function hideMenu() {
+        nav.style.right = "-200px";
+    }
+</script>
+
 </body>
 </html>
