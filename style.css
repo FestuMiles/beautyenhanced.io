@@ -23,7 +23,7 @@ header{
     left: 0;
     right: 0;
     /* width: 100%; */
-    padding: 2rem 9%;
+    padding: 2rem 8%;
     background: #fff;
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ header .beauty_name span{
 }
 header .navigator a{
     font-size: 2rem;
-    padding: 0 1.5rem;
+    padding: 0 0.5rem;
     color: #666;
 }
 header .navigator a:hover{
@@ -243,7 +243,7 @@ section{
 .services .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 11rem;
 }
 .services h1{
     text-align: center;
@@ -258,7 +258,6 @@ section{
     /* box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1); */
     /* border-radius: .5rem; */
     /* border: 1rem solid rgba(0, 0, 0, .1); */
-    position: relative;
 }
 .services .box-container .box .lessons{
     text-align: center;
@@ -279,6 +278,31 @@ section{
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     /* border-radius: .5rem; */
     border: 1rem solid rgba(0, 0, 0, .1);
+    
+}
+.services .image0{
+    height: 30rem;
+    background: url(images/learn.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.services .image1{
+    height: 30rem;
+    background: url(images/prod.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.services .image2{
+    height: 30rem;
+    background: url(images/bride.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.services .image3{
+    height: 30rem;
+    background: url(images/Nails.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .services .box-container .box .image img{
     height: 30rem;
@@ -306,7 +330,6 @@ section{
     color: #333;
 }
 .services .box .btn{
-    /* display: inline-block; */
     margin-top: 1rem;
     border-radius: 5rem;
     background: #333;
@@ -371,14 +394,13 @@ section{
     }
     .services .box .btn{
         /* display: inline-block; */
-        margin-top: 0;
         border-radius: 5rem;
-        padding: 5px 3px;
+        padding: 10px 3px;
         cursor: pointer;
-        text-align: center;
-        width: 200px;
         margin-bottom: 50px;
         margin-top: 10px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
     .services .box .btn a{
         font-size: 1.7rem;
@@ -393,7 +415,7 @@ section{
     padding-top: 90px;
     padding-bottom: 40px;
 }
-.contact span{
+.contact h1 span{
     color: #e84393;
 }
 .contact .row{
@@ -409,21 +431,45 @@ section{
     border: 1rem solid rgba(0, 0, 0, .1);
     background: #fff;
     border-radius: .5rem;
+    /* height: 300px; */
+
 }
-.contact .row .image{
+.contact .row .contact-col1{
     flex: 1 1 40rem;
 }
-.contact .row .image img{
+.contact .row .contact-col{
     /* height: 300px; */
-    /* flex: 1 1 40rem; */
+    flex: 1 1 40rem;
     width: 100%;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border: 1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    padding: 2rem 2.5rem;
+
+
+}
+.contact-col div{
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 40px;
+    /* margin-top: 40px; */
+}
+.contact-col div p{
+    /* padding: 0; */
+    font-size: 16px;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
 }
 .contact .row form .box{
     padding: 1rem;
     font-size: 1.7rem;
     color: #333;
     text-transform: none;
-    border: 1rem solid rgba(0, 0, 0, .1);
+    border: 3px solid rgba(0, 0, 0, .1);
     border-radius: .5rem;
     margin: .7rem 0;
     width: 100%;
@@ -435,32 +481,33 @@ section{
     height: 15rem;
     resize: none;
 }
+.contact-col1 .my-btn .send-btn{
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    border: 3px solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    font-size: 16px;
+}
+.contact-col1 .my-btn .send-btn:hover{
+    background-color: var(--pink);
+}
 
 @media(max-width: 700px){
     .contact h1{
         font-size: 30px;
-        /* padding-top: 90px; */
-        /* padding-bottom: 40px; */
+        padding-top: 90px;
+        padding-bottom: 40px;
     }
  
     .contact .row{
         gap: 1.5rem;
     }
     .contact .row form{
-        flex: 1 1 40rem;
-        padding: 2rem 2.5rem;
-        box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
         border: 5px solid rgba(0, 0, 0, .1);
-        background: #fff;
-        border-radius: .5rem;
     }
-    .contact .row .image{
-        flex: 1 1 40rem;
-    }
-    .contact .row .image img{
-        /* height: 300px; */
-        /* flex: 1 1 40rem; */
-        width: 100%;
+    .contact .row .contact-col{
+        border: 5px solid rgba(0, 0, 0, .1);
     }
     .contact .row form .box{
         padding: 1rem;
@@ -470,29 +517,39 @@ section{
     .contact .row form textarea{
         height: 15rem;
     }
+    .contact-col div p{
+        font-size: 12px;
+    }
+    .contact-col div h5{
+        font-size: 16px;
+    }
 }
-
 
 
 /* footer */
 .footer .box-container{
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
 }
 .footer .box-container .box{
     flex: 1 1 25rem;
 }
+
 .footer .box-container .box h3{
     color: #333;
     font-size: 2.5rem;
     padding: 1rem 0;
+    padding-top: 40px;
 }
 .footer .box-container .box a{
-    display: block;
+    /* display: inline-block; */
     color: #666;
     font-size: 1.5rem;
     padding: 1rem 0;
+    padding-left: 20px;
 }
 .footer .box-container .box a img{
     padding-top: 5px;
@@ -506,7 +563,7 @@ section{
     padding: 1.5rem;
     margin-top: 1.5rem;
     padding-top: 2.5rem;
-    font-size: 2rem;
+    font-size: 12px;
     color: #333;
     border-top: .1rem solid rgba(0, 0, 0, .1);
 }
@@ -514,3 +571,45 @@ section{
     color: var(--pink);
 }
 
+
+/* ----------------- Success Page -------------------  */
+
+.my-body{
+    height: 550px;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: var(--pink);
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+}
