@@ -588,6 +588,9 @@ section{
     .footer .box-container .box a img{
         height: 20px;
     }
+    .footer .box-container .box a{
+        padding-left: 10px;
+    }
     
 }
 
