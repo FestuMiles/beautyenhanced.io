@@ -524,7 +524,15 @@ section{
         font-size: 16px;
     }
 }
-
+@media(max-width: 400px){
+    
+    .contact-col div p{
+        font-size: 12px;
+    }
+    .contact-col div h5{
+        font-size: 12px;
+    }
+}
 
 /* footer */
 .footer .box-container{
@@ -570,7 +578,18 @@ section{
 .footer .credit span{
     color: var(--pink);
 }
-
+@media(max-width: 500px){
+    .footer .box-container .box h3{
+        color: #333;
+        font-size: 20px;
+        padding: 1rem 0;
+        padding-top: 40px;
+    }
+    .footer .box-container .box a img{
+        height: 20px;
+    }
+    
+}
 
 /* ----------------- Success Page -------------------  */
 
