@@ -590,6 +590,8 @@ section{
     }
     .footer .box-container .box a{
         padding-left: 10px;
+        font-size: 1rem;
+
     }
     
 }
