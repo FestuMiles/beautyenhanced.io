@@ -159,41 +159,30 @@ section{
 
 @media(max-width: 700px){
     .home{
-        min-height: 60vh;
-        margin-top: 40px;
+        min-height: 70vh;
+        background: url(images/Backg.png) no-repeat;
         display: flex;
         align-items: center;
-        background: url(images/Adobe_Express_20231228_1248430_1.png) no-repeat;
         background-size: cover;
         background-position: center;
     }
     .home .content h3{
-        display: none;
         font-size: 30px;
     }
     .home .content span{
         font-size: 25px;
-        display: none;
-
     }
     .home .content p{
         font-size: 20px;
-        display: none;
+        width: 50%;
     }
     .click{
         display: inline-block;
-        margin-top: 250px;
-        margin-left: 195px;
+        margin-top: 1rem;
         border-radius: 5rem;
         padding: 10px 3.5rem;
         cursor: pointer;
         font-size: 15px;
-    }
-    .home .content{
-        max-width: 100%;
-    }
-    section{
-        padding: 2rem 9%;
     }
 }
 
